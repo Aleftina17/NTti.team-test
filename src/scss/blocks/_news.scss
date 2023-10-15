@@ -1,0 +1,242 @@
+.section-news {
+  margin-top: 172px;
+
+  @media (max-width: 376px) {
+    margin-bottom: 0;
+    margin-top: 120px;
+  }
+}
+
+.news {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 69px;
+    position: relative;
+
+    @media (max-width: 376px) {
+      margin-bottom: 116px;
+      gap: 20px;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    white-space: nowrap;
+
+    @media (max-width: 945px) {
+      align-items: center;
+    }
+  }
+
+  &__desc {
+    max-width: 721px;
+    color: var(--color-text-muted);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+
+    @media (max-width: 945px) {
+      font-size: 15px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    white-space: nowrap;
+
+    @media (max-width: 550px) {
+      position: absolute;
+      top: 155px;
+      left: 2px;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+    grid-column-gap: 44px;
+    grid-row-gap: 40px;
+
+    @media (max-width: 945px) {
+      grid-row-gap: 20px;
+      grid-column-gap: 28px;
+    }
+
+    @media (max-width: 904px) {
+      justify-items: center;
+    }
+
+    @media (max-width: 440px) {
+      justify-items: flex-start;
+    }
+  }
+}
+
+.card-wrapper {
+  border-radius: 45px 0 45px 0;
+  width: 415px;
+  height: 364px;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+
+  @media (max-width: 495px) {
+    width: 324px;
+    height: 293px;
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @media (max-width: 495px) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .card-news__img {
+      img {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.card-news {
+  position: relative;
+  width: 415px;
+
+  @media (max-width: 495px) {
+    width: 324px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -103px;
+    right: 0;
+    left: -1px;
+    z-index: 3;
+    background-image: url("./../../img/news/card-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 416px;
+    height: 146px;
+
+    @media (max-width: 495px) {
+      width: 325px;
+      background-size: contain;
+      bottom: -93px;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    right: -22px;
+    top: 63px;
+    background-color: var(--color-bg);
+    width: 50px;
+    height: 97px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    z-index: 10;
+
+    @media (max-width: 495px) {
+      top: 54px;
+      width: 39px;
+      height: 76px;
+    }
+
+    .day {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: normal;
+
+      @media (max-width: 495px) {
+        font-size: 18px;
+      }
+    }
+
+    .month {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: normal;
+
+      @media (max-width: 495px) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 45px 0 0 0;
+    max-width: 414px;
+    max-height: 262px;
+    overflow: hidden;
+
+    @media (max-width: 495px) {
+      width: 324px;
+    }
+
+    img {
+      object-fit: cover;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: -37px;
+    right: 28px;
+    z-index: 5;
+
+    @media (max-width: 495px) {
+      bottom: -8px;
+      right: 26px;
+    }
+  }
+  &__title {
+    position: absolute;
+    bottom: -47px;
+    left: 30px;
+    z-index: 5;
+    max-width: 286px;
+
+    @media (max-width: 495px) {
+      bottom: -19px;
+      left: 21px;
+    }
+  }
+  &__desc {
+    position: absolute;
+    bottom: -77px;
+    left: 29px;
+    z-index: 5;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media (max-width: 495px) {
+      bottom: -70px;
+      left: 20px;
+    }
+  }
+}

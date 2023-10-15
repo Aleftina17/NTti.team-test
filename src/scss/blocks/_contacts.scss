@@ -1,0 +1,348 @@
+.section-contacts {
+  margin-top: 526px;
+  background-color: var(--color-section-bg-dark);
+  position: relative;
+
+  @media (max-width: 1230px) {
+    margin-top: 120px;
+    padding-top: 98px;
+    overflow-x: hidden;
+  }
+
+  .title-1 {
+    line-height: 50px;
+    margin-bottom: 18px;
+  }
+}
+
+.contacts {
+  &__img {
+    padding: 202px 0 50px 12px;
+
+    @media (max-width: 1230px) {
+      display: none;
+    }
+  }
+
+  // .container{
+  //   @media (max-width: 1230px) {
+  //     padding: 0;
+  //    }
+  // }
+
+  &__content {
+    position: absolute;
+    top: -352px;
+    right: 23px;
+    left: 0;
+    margin: 0 auto;
+    height: 700px;
+    max-width: 1400px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1230px) {
+      grid-template-columns: 1fr;
+      position: static;
+      height: unset;
+      max-width: unset;
+    }
+
+    &__left {
+      background-color: var(--color-section-bg-muted);
+      border-radius: 20px 0px 0px 20px;
+      height: 100%;
+
+      position: relative;
+
+      @media (max-width: 1230px) {
+        background-color: unset;
+        border-radius: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 143px;
+        right: -492px;
+        background-image: url("./../../img//contacts/iPhone-img.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 590px;
+        flex-shrink: 0;
+        pointer-events: none;
+
+        @media (max-width: 1370px) {
+          width: 50%;
+          height: 450px;
+          right: -184px;
+          top: 128px;
+        }
+
+        @media (max-width: 890px) {
+          transform: rotate(24deg);
+          right: -10px;
+        }
+
+        @media (max-width: 630px) {
+          transform: rotate(14deg);
+          width: 50%;
+          height: 314px;
+          right: 31px;
+          top: 236px;
+        }
+
+        @media (max-width: 440px) {
+          width: 37%;
+          height: 252px;
+          top: 314px;
+        }
+      }
+    }
+
+    &__right {
+      background-color: var(--color-text);
+      border-radius: 0px 20px 20px 0px;
+      height: 100%;
+
+      @media (max-width: 1230px) {
+        border-radius: 0;
+        margin-right: -60px;
+        margin-left: -60px;
+      }
+
+      @media (max-width: 1010px) {
+        border-radius: 0;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+    }
+  }
+}
+
+.our-contacts {
+  padding: 102px 186px 111px 100px;
+
+  @media (max-width: 1370px) {
+    padding: 40px 110px 59px 40px;
+  }
+
+  @media (max-width: 1230px) {
+    padding: 0px 15px 60px;
+  }
+
+  &__desc {
+    color: var(--color-text-muted);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 48px;
+
+    @media (max-width: 1230px) {
+      font-size: 15px;
+      margin-bottom: 37px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    color: var(--color-text-muted);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 133.687%;
+
+    @media (max-width: 1230px) {
+      font-size: 15px;
+      gap: 8px;
+    }
+
+    img {
+      @media (max-width: 1230px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    color: inherit;
+    padding-left: 54px;
+    display: block;
+
+    @media (max-width: 1230px) {
+      padding-left: 26px;
+      font-size: 18px;
+      width: 276px;
+    }
+  }
+
+  &__address {
+    margin-bottom: 44px;
+
+    @media (max-width: 1230px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__email {
+    margin-bottom: 72px;
+
+    @media (max-width: 1230px) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__tel {
+    margin-bottom: 60px;
+
+    @media (max-width: 1230px) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    @media (max-width: 1230px) {
+      gap: 12px;
+    }
+
+    img {
+      @media (max-width: 1230px) {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}
+
+.application {
+  color: var(--color-bg);
+  padding: 100px 137px 103px 129px;
+
+  @media (max-width: 1370px) {
+    padding: 40px 40px 40px 110px;
+  }
+
+  @media (max-width: 1230px) {
+    padding: 53px 30px 60px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 66px;
+
+    @media (max-width: 376px) {
+      font-size: 15px;
+      margin-top: -10px;
+      width: 319px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__form {
+    margin-bottom: 57px;
+
+    color: var(--color-section-bg);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 133.687%;
+
+    @media (max-width: 480px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 52px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 36px;
+  }
+
+  span {
+    position: absolute;
+    top: -20px;
+    left: 19px;
+    background-color: var(--color-text);
+    padding: 10px 10px 6px 10px;
+
+    @media (max-width: 376px) {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 133.687%;
+      left: 13px;
+    }
+  }
+
+  input {
+    border: 1px solid rgba(242, 242, 242, 0.5);
+    border-radius: 20px;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+
+    &:focus {
+      border: 1px solid var(--color-section-bg);
+    }
+
+    @media (max-width: 376px) {
+      border-radius: 10px;
+      height: 40px;
+      font-size: 14px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  #inputComments {
+    height: 109px;
+    border: none;
+    width: 100%;
+    outline: none;
+    resize: none;
+
+    @media (max-width: 376px) {
+      height: 65px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+  }
+
+  .textarea-wrapper {
+    padding: 20px 10px 10px 10px;
+    border: 1px solid rgba(242, 242, 242, 0.5);
+    border-radius: 20px;
+
+    @media (max-width: 376px) {
+      border-radius: 10px;
+      height: 80px;
+      padding-top: 34px;
+      overflow: hidden;
+    }
+
+    &:focus {
+      border: 1px solid var(--color-section-bg);
+    }
+  }
+}

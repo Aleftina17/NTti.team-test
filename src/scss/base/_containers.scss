@@ -1,0 +1,24 @@
+.container {
+	padding: 0 60px;
+	max-width: 1520px;
+	margin: 0 auto;
+
+	&--right {
+		overflow-x: hidden;
+		padding-left: calc(
+			(100% - 1520px) / 2 + 60px
+		);
+
+		@media (max-width: 1410px) {
+			padding-left: 15px;
+		}
+	}
+
+	@media (max-width: 1010px) {
+		padding: 0 15px;
+	  }
+}
+
+
+
+

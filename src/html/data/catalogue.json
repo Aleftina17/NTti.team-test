@@ -1,0 +1,32 @@
+[
+    {
+        "img": "catalogue-1.svg",
+        "title": "Ноутбуки",
+        "amount": 105,
+        "order": "01"
+    },
+    {
+        "img": "catalogue-2.svg",
+        "title": "Персональные компьютеры",
+        "amount": 65,
+        "order": "02"
+    },
+    {
+        "img": "catalogue-3.svg",
+        "title": "Cерверы",
+        "amount": 13,
+        "order": "03"
+    },
+    {
+        "img": "catalogue-4.svg",
+        "title": "Dell EMC",
+        "amount": 2345,
+        "order": "04"
+    },
+    {
+        "img": "catalogue-5.svg",
+        "title": "Запасные части к Dell EMC",
+        "amount": 195,
+        "order": "05"
+    }
+]

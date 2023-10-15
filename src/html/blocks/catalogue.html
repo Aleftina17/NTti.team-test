@@ -1,0 +1,23 @@
+<section class="section-catalogue">
+  <div class="container">
+    <div class="catalogue">
+      <div class="catalogue__grid">
+        <div class="catalogue__text">
+          <div class="title-1">Каталог товаров от&nbsp;Dell</div>
+          <div class="catalogue__text__desc">
+            Наша компания является зарегистрированным и официальным партнером
+            Dell в России.
+          </div>
+          <div class="catalogue__text__footer">
+            <button class="btn btn--goto">
+              <img src="./../../img//icons/arrow-right-ico.svg" alt="Go To" />
+            </button>
+            <span>В каталог</span>
+          </div>
+        </div>
+        @@loop('./../cards-templates/card-catalogue.html',
+        './data/catalogue.json')
+      </div>
+    </div>
+  </div>
+</section>

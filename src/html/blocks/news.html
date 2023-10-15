@@ -1,0 +1,25 @@
+<section class="section-news">
+  <div class="container">
+    <div class="news">
+      <div class="news__top">
+        <div class="news__title">
+          <div class="title-1">Последние новости</div>
+          <div class="news__btn">
+            <span>Все новости</span>
+            <button class="btn btn--goto">
+                <img src="./../../img//icons/arrow-right-ico.svg" alt="Go To" />
+              </button>
+        </div>
+        </div>
+        <div class="news__desc">
+          Вы можете посмотреть ещё больше интересных новостей и узнать о
+          последних новинках, перейдя по кнопке
+        </div>
+
+      </div>
+      <div class="news__grid">
+        @@loop('./../cards-templates/card-news.html', './data/news.json')
+      </div>
+    </div>
+  </div>
+</section>

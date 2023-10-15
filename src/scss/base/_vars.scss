@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900);
+
+@font-face {
+	font-family: 'Euclid Circular A';
+	src: url('./../../fonts//Euclid\ Circular\ A\ Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Euclid Circular A';
+	src: url('./../../fonts/Euclid\ Circular\ A\ Light.ttf');
+	font-weight: 300;
+}
+
+:root {
+	--font-main: 'Roboto', sans-serif;
+	--font-accent: 'Euclid Circular A', sans-serif;
+
+	--color-bg: #fff;
+	--color-text: #292D32;
+	--color-text-muted: #838383;
+	--color-text-muted--light: #B7B7B7;
+	--color-accent: #33A9FF;
+	--color-cards-dark: #343A41;
+
+	--color-section-bg: #F2F2F2;
+	--color-section-bg-dark: #eeeeee;
+	--color-section-bg-muted: #f9f9f9;
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
